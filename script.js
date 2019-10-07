@@ -12,7 +12,7 @@
     const paragraph = document.querySelector('#container');
     const textOne = document.createElement ('p');
     textOne.classList.add('textOne');
-    textOne.textContent = "Hey I’m red!";
+    textOne.textContent = "Hey I'm red!";
     textOne.style.color = 'red';
 
     container.appendChild(textOne);
@@ -22,7 +22,7 @@
     const titleThree = document.getElementById('container');
     const textThree = document.createElement('h3');
     textThree.classList.add('textThree');
-    textThree.textContent = "I’m a blue h3!";
+    textThree.textContent = "I'm a blue h3!";
     textThree.style.color = 'blue';
 
     container.appendChild(textThree);
@@ -41,7 +41,7 @@
         // another <h1> that says “I’m in a div”
         const newTittle = document.getElementById('exercise');
         const textExe = document.createElement('h1');
-        textExe.textContent = "I’m in a div"
+        textExe.textContent = "I'm in a div"
 
         exercise.appendChild(textExe);
         
@@ -57,4 +57,6 @@
 
     
     let btn = document.querySelector('#btn');
-    btn.onclick = () => alert("Hello World");
+    btn.addEventListener('click', () => {
+        alert("Hello World");
+      });
